@@ -1,4 +1,8 @@
 
+
+// Add a drop down flash message
+$('#flashMessage').hide();
+
 // Select and ID and create an event listener
 $('#previewButton').click(function(){
 
@@ -10,5 +14,11 @@ $('#previewButton').click(function(){
     
     $('#blogTitlePreview').text(title);
     $('#blogContentPreview').html(content);
+
+// Flash message only shows on save
+    $('#flashMessage')
+    .slideDown(1000)
+    .delay(3000)
+    .slideUp();
 
 });
