@@ -1,10 +1,6 @@
-$('#flashMessage')
-    .hide();
-// Number of Milliseconds used for message to fade in
-    .fadeIn(1000);
 
-// Number of milliseconds for user to read message
-    .delay(3000);
+const title = "my first blog post";
+const content = "my <strong>first</strong> post";
 
-
-    .slideUp();
+$('#blogTitlePreview').text(title);
+$('#blogContentPreview').html(content);
