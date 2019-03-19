@@ -1,6 +1,14 @@
 
-const title = "my first blog post";
-const content = "my <strong>first</strong> post";
+// Select and ID and create an event listener
+$('#previewButton').click(function(){
 
-$('#blogTitlePreview').text(title);
-$('#blogContentPreview').html(content);
+    // Change the value of the text in the ID to
+    // what is entered in the form. 
+    const title = $('#blogTitleInput').val();
+    const content = $('#blogContentInput').val();
+
+    
+    $('#blogTitlePreview').text(title);
+    $('#blogContentPreview').html(content);
+
+});
