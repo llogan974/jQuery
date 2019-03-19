@@ -1,6 +1,9 @@
-$('.box').hide();
-$('.box').show();
+$('#flashMessage').hide();
+// Number of Milliseconds used for message to fade in
+$('#flashMessage').fadeIn(1000);
 
-$('.box').click(function(){
-    alert('You clicked me w jQuery!');
-})
+// Number of milliseconds for user to read message
+$('#flashMessage').delay(3000);
+
+
+$('#flashMessage').slideUp();
